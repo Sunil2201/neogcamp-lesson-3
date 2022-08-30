@@ -2,6 +2,7 @@
 
 :root{
     --primary-color: #6D28D9;
+    --dark-gray : #6b7280;
 }
 
 body{
@@ -47,6 +48,7 @@ hr{
     padding: 0rem 0.5rem;
 }
 
+/* Navbar */
 .navigation{
     background-color: var(--primary-color);
     color: white;
@@ -69,4 +71,25 @@ hr{
 
 .navigation .link-active{
     font-weight: bold;
+}
+
+/* Header */
+
+.hero{
+    padding: 2rem;
+}
+
+.hero .hero-img{
+    max-width: 350px;
+    display: block;
+    margin: auto;
+}
+
+.hero .hero-heading{
+    padding-top: 1rem;
+    color: var(--dark-gray);
+}
+
+.hero .hero-heading .heading-inverted{
+    color: var(--primary-color);
 }
