@@ -41,16 +41,22 @@ hr{
     border-radius: 0.5rem;
     background-color: var(--secondary-color);
     color: white;
+    margin: 0.5rem;
 }
 .primary-link:hover{
     background-color: var(--hover-color);
 }
 .secondary-link{
-    color: var(--primary-color);
+    color: white;
     border-radius: 0.5rem;
-    border: 1px solid var(--primary-color);
+    border: 1px solid var(--secondary-color);
 }
-
+.secondary-link:hover{
+    background-color: #1E293B;
+    color: #09aef5;
+    border: none;
+    transition: all 0.5s ease;
+}
 /* Lists */
 
 .list-non-bullet{
@@ -121,24 +127,36 @@ hr{
 }
 /* Sections */
 .section{
-    padding: 2rem;
+    padding: 1.5rem;
+    width: 60%;
+    margin: auto;
 }
 
 .section h1{
     text-align: center;
     font-size: 1.5rem;
 }
+.section small{
+    display: block;
+    text-align: center;
+    padding-bottom: 0.5rem;
+}
 .section p{
-    font-size: 1.2rem;
+    font-size: 1rem;
+    font-weight: 300;
     text-align: center;
     margin-bottom: 1rem;
 }
-.ow{
+.light{
     background-color: #1E293B;
+    width: 60%;
+    margin: auto;
+    border-radius: 1rem;
 }
 .buttons{
     display: block;
     text-align: center;
+    margin: 0.5rem 0rem;
 }
 /* footer */
 
@@ -177,5 +195,16 @@ hr{
     }
     .navigation .nav-pills{
         margin-left: 0rem;
+    }
+    .light{
+        width: 85%;
+    }
+    .section{
+        width: 85%;
+    }
+    .buttons{
+        display: flex;
+        align-items: center;
+        justify-content: center;
     }
 }
