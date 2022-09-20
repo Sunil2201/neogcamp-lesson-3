@@ -112,10 +112,11 @@ hr{
 }
 
 .hero .hero-heading{
+    font-size: 2rem;
     text-align: center;
     padding-top: 1rem;
     color: white;
-    font-weight: 400;
+    font-weight: 600;
 }
 .hero .description{
     font-size: 1.2rem;
@@ -124,6 +125,9 @@ hr{
 }
 .hero .description span{
     opacity: 1;
+}
+.hero .heading-inverted{
+    color: #09aef5;
 }
 /* Sections */
 .section{
