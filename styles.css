@@ -6,16 +6,17 @@
     box-sizing: border-box;
 }
 :root{
+    --primary-color:white;
     --secondary-color: #09aef5;
     --hover-color: #38BDF8;
-    --dark-gray : #6b7280;
-    --off-white: #f3f4f6;
+    --dark-bg: #0F172A;
+    --light-bg: #1E293B;
 }
 
 body{
     font-family: 'Poppins', sans-serif;
-    background-color: #0F172A;
-    color: white;
+    background-color: var(--dark-bg);
+    color: var(--primary-color);
 }
 hr{
     margin: 2rem 0rem;
@@ -40,20 +41,20 @@ hr{
     border: none;
     border-radius: 0.5rem;
     background-color: var(--secondary-color);
-    color: white;
+    color: var(--primary-color);
     margin: 0.5rem;
 }
 .primary-link:hover{
     background-color: var(--hover-color);
 }
 .secondary-link{
-    color: white;
+    color: var(--primary-color);
     border-radius: 0.5rem;
     border: 1px solid var(--secondary-color);
 }
 .secondary-link:hover{
-    background-color: #1E293B;
-    color: #09aef5;
+    background-color: var(--light-bg);
+    color: var(--secondary-color);
     border: none;
     transition: all 0.5s ease;
 }
@@ -72,7 +73,7 @@ hr{
     display: flex;
     align-items: center;
     justify-content: space-between;
-    color: white;
+    color: var(--primary-color);
     padding: 1rem;
     border-bottom-left-radius: 1rem;
 }
@@ -91,7 +92,7 @@ hr{
 }
 
 .navigation .link{
-    color: white;
+    color: var(--primary-color);
 }
 
 .navigation .link-active{
@@ -116,7 +117,7 @@ hr{
     font-size: 2rem;
     text-align: center;
     padding-top: 1rem;
-    color: white;
+    color: var(--primary-color);
     font-weight: 600;
 }
 .hero .description{
@@ -128,7 +129,7 @@ hr{
     opacity: 1;
 }
 .hero .heading-inverted{
-    color: #09aef5;
+    color: var(--secondary-color);
 }
 /* Sections */
 .section{
@@ -153,7 +154,7 @@ hr{
     margin-bottom: 1rem;
 }
 .light{
-    background-color: #1E293B;
+    background-color: var(--light-bg);
     width: 60%;
     margin: auto;
     border-radius: 1rem;
@@ -163,11 +164,25 @@ hr{
     text-align: center;
     margin: 0.5rem 0rem;
 }
+.blog-section{
+    padding: 0rem;
+}
+.blog-section p{
+    text-align: left;
+}
+.blog-section h2{
+    font-size: 1.2rem;
+    text-align: left;
+    padding-bottom: 0.5rem;
+}
+.blog-section small{
+    display: inline;
+}
 /* footer */
 
 .footer{    
     padding: 2rem;
-    color: white;
+    color: var(--primary-color);
     text-align: center;
     border-top-right-radius: 1rem;
 }
@@ -182,7 +197,7 @@ hr{
 }
 
 .footer .link{
-    color: white;
+    color: var(--primary-color);
 }
 
 .footer ul{
